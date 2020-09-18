@@ -1,49 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center|center_vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/textView1"
-        android:layout_gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-    android:id="@+id/tv_first_text"
-    android:gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/msg_slogan" />
-
-    <TextView
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/msg_what" />
-
-    <EditText
-        android:id="@+id/text_input"
-        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:inputType="text" />
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kroton"/>
 
-    <TextView
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/msg_curso" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qual_o_seu_curso"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:text="@string/msg_digite" />
+        <EditText
+            android:id="@+id/dt_curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_aqui"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tx_curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_curso"/>
+
+        <Button
+            android:id="@+id/btn_curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmar_curso"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,18 +1,33 @@
 package com.example.bemvindo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    val TAG = "<<<TMA>>>"
+    override fun onCreate (savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val tv_first = findViewById<TextView>(R.id.tv_first_text)
-        tv_first.text = getString(R.string.msg_slogan2)
+        btn_curso.setOnClickListener  {
+            readCourse()
+        }
 
-        val text_input = findViewById<TextView>(R.id.text_input)
-        text_input.text = getString(R.string.msg_digite)
+
+        }
+
+   private fun readCourse () {
+        val nomecurso = dt_curso. text. toString()
+        val text = getString(R.string.text_curso)
+        tx_curso. text = "$text  :  $nomecurso"
     }
-}
+
+
+
+    }
+
+
+
+
 

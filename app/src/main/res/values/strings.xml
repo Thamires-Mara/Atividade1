@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">Bem vindo</string>
-    <string name="msg_bem_vindo">Bem Vindo ao mundo do Desenvolvimento Android!</string>
-    <string name="msg_slogan">Paixão por educar</string>
-    <string name="msg_what">Qual o seu curso?</string>
-    <string name="msg_slogan2">Paixão por educar sempre</string>
-    <string name="msg_digite">Digite aqui</string>
-    <string name="msg_curso">O curso digitado é:</string>
-    <string name="but_1">CONFIRMAR CURSO</string>
+    <string name="qual_o_seu_curso">Qual o seu curso?</string>
+    <string name="digite_aqui">Digite aqui</string>
+    <string name="text_curso">O curso digitado foi:</string>
+    <string name="confirmar_curso">CONFIRMAR CURSO</string>
 </resources>
